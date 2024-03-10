@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/todo.css') }}"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<body>
+    <h1 class="head">Task List</h1>
+    <button class="button2">Add New Task</button>
+    <button class="button1">Update Task Status</button>
+    <a href="/all"><button class="btn2">View all Task</button></a>
+    <div class="form">
+        <form id="form">
+            <!-- <textarea id="area" rows="13" placeholder="write What you want to do..."></textarea> -->
+            <label >Enter Task:</label>
+            <input type="text" id="value" placeholder="Task" required><br><br>
+            <label>Enter Description:</label>
+            <input type="text" id="description" placeholder="Description...." required/><br><br>
+            <label  >Enter Due Date:</label>
+            <input type="date" id="due_date" required><br><br>
+            <label  >Enter start Time:</label>
+            <input type="time" id="start_time" required><br><br>
+            <label  >Enter End Time:</label>
+            <input type="time" id="end_time" required><br><br>
+            <label>Task Assigned Date:</label>
+            <input type="date" id="assigned" readonly/><br><br>
+            <button id="btn">Submit</button>
+        </form>
+    </div>
+    <div class="first">
+            <div id="container">
+                <div id="Assigned" class="div_in" ondrop="drop(event,'Assigned')" ondragover="allowDrop(event)"><h2>Assigned task</h2></div>
+                <div id="Pending" class="div_in" ondrop="drop(event,'Pending')" ondragover="allowDrop(event)"><h2>Pending Task</h2></div>
+                <div id="Completed" class="div_in" ondrop="drop(event,'Completed')" ondragover="allowDrop(event)"><h2>Completed task</h2></div>
+            </div>
+    </div>
+    </body>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="{{ url_for('static', filename='js/todo.js') }}"></script>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/todo.css') }}"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/simplePagination.min.css">
+
+    <body>
+        <h1 class="head">Task List</h1>
+        <a href="/newtodo"><button class="btn1">Add New Task</button></a>
+        <!-- <button class="btn2">View All</button> -->
+        <div id="todo-list-container">
+            <!-- <table id="todo-list">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Task</th>
+                        <th>Description</th>
+                        <th>Due Date</th>
+                        <th>Assigned Date</th>
+                        <th>Status</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody id="todo-list-body"></tbody>
+            </table> -->
+        </div>
+        <div id="pagination"></div>
+
+    </body>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="{{ url_for('static', filename='js/all.js') }}"></script>
+</html>

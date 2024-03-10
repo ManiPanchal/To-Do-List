@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+}
+.head{
+    background-color: rgb(167, 209, 245);
+    text-align: center;
+    padding: 10px;
+    /* font-size:50px; */
+}
+.btn1{
+    text-decoration: none;
+            background-color: rgb(104, 184, 254);
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            top:11px;
+            left:10px;
+            position: fixed;
+            color: black;
+            font-weight: bold;
+            border: none;
+}
+.btn2{
+    text-decoration: none;
+            background-color: rgb(104, 184, 254);
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            top:11px;
+            right:10px;
+            position: fixed;
+            color: black;
+            font-weight: bold;
+            border: none;
+}
+/* styles.css */
+
+/* Style the table */
+table {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+/* Style table header */
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+/* Style table rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style table cells */
+td {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+/* Style edit and delete buttons */
+.edit-btn,.save-btn,
+.delete-btn {
+    padding: 6px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: #f44336; /* Red */
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    opacity: 0.8;
+}
