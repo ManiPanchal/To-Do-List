@@ -4,7 +4,8 @@ import mysql.connector
 mysql=mysql.connector.connect(
     host="localhost",
     user="root",
-    database="todo_list"
+    password="1234",
+    database="python_todo"
 )
 cursor=mysql.cursor()
 app = Flask(__name__)
